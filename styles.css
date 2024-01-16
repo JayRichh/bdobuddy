@@ -1,0 +1,141 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cookingControls {
+  display: flex;
+  align-items: center;
+}
+input[type="number"] {
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 10rem;
+}
+
+.calculate-btn,
+.clear-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.calculate-btn {
+  background-color: #28a745;
+  font: bold;
+}
+
+.calculate-btn:hover {
+  background-color: #218838;
+}
+
+.clear-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clear-btn:hover {
+  background-color: #bd2130;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+aside {
+  width: 250px;
+  background: #f1f1f1;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  padding: 15px;
+}
+
+section {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.scrollable-section {
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.recipe-item {
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid #e1e1e1;
+  transition: background 300ms;
+}
+
+.recipe-item:hover {
+  background-color: #e7f4ff;
+}
+
+.recipe-item:active,
+.recipe-item.selected {
+  background-color: #d0eaff;
+}
+
+.recipe-details-section,
+.recipe-header {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-header {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+#craftingResults {
+  margin-top: 20px;
+}
+
+#craftingResults table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#craftingResults th,
+#craftingResults td {
+  text-align: left;
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+}
+
+#craftingResults th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+#craftingResults tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cooking</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="app-container">
+    <header>
+      <h1>BDO Cooking m8</h1>
+      <small>Calculators and recipies</small>
+      <div id="cookingControls">
+        <input type="number" id="numberPotato" placeholder="Insert potato count" />or &nbsp;
+        <input type="number" id="numberWeight" placeholder="Insert character weight" />then
+        <button id="submit" class="calculate-btn">Calculate</button>&nbsp;or
+        <button id="clearPotato" class="clear-btn">Reset</button>
+      </div>
+    </header>
+
+    <main>
+      <aside id="recipeTree" class="scrollable-section"></aside>
+      <section id="recipeDetails" class="scrollable-section">
+      </section>
+      <section id="craftingResults">
+        <table>
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Amount</th>
+              <th>Green Beer</th>
+              <th>Blue Beer</th>
+              <th>Total Weight</th>
+            </tr>
+          </thead>
+          <tbody id="resultTable">
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
